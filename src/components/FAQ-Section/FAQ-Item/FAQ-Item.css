@@ -1,0 +1,19 @@
+.null p {
+	max-height: 40px;
+	transition: all .4s ease-in-out;
+}
+
+.null div h6 {
+	transition: all .4s ease-in-out;
+}
+
+.actived p {
+	max-height: 120px;
+	color: #F2F2F2;
+	transition: all .4s ease-in-out;
+}
+
+.actived div h6 {
+	color: #54E280;
+	transition: all .4s ease-in-out;
+}
