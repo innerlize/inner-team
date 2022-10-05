@@ -1,0 +1,18 @@
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {
+      backgroundImage: () => ({
+          'landing-background':
+              "linear-gradient(270deg, rgba(255, 255, 255, 0) 2.08%, rgba(0, 0, 0, 0.32) 74.67%, rgba(0, 0, 0, 0.2) 100%), url('/src/assets/img/bg-home.webp')",
+          'servicio1': "linear-gradient(270deg, rgba(255, 255, 255, 0) 2.08%, rgba(0, 0, 0, 0.32) 74.67%, rgba(0, 0, 0, 0.2) 100%),url('/src/assets/img/servicio1.png')",
+          'servicio2': "linear-gradient(270deg, rgba(255, 255, 255, 0) 2.08%, rgba(0, 0, 0, 0.32) 74.67%, rgba(0, 0, 0, 0.2) 100%),url('/src/assets/img/servicio2.png')",
+          'servicio3': "linear-gradient(270deg, rgba(255, 255, 255, 0) 2.08%, rgba(0, 0, 0, 0.32) 74.67%, rgba(0, 0, 0, 0.2) 100%),url('/src/assets/img/servicio3.png')",
+          'servicio4': "linear-gradient(270deg, rgba(255, 255, 255, 0) 2.08%, rgba(0, 0, 0, 0.32) 74.67%, rgba(0, 0, 0, 0.2) 100%),url('/src/assets/img/servicio4.png')",
+
+      
+        }),
+  },
+  },
+  plugins: [],
+}
