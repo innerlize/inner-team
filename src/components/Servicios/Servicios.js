@@ -20,8 +20,8 @@ const Servicios = () => {
 
   return (
     <section className="flex flex-col justify-center" style={{
-      padding: '100px 150px 50px',
-      gap: '16px'
+      
+      gap: '4%'
     }}  >
       <div className='flex flex-row items-center justify-center' id="servicios" >
         <span className='text-3xl font-bold text-[#06D7F9]' style={{ fontSize: "20px", fontWeight: "600" }}>Nuestros servicios</span>
@@ -30,13 +30,17 @@ const Servicios = () => {
       <div className='flex flex-wrap items-center justify-center mt-5 align-middle'>
         <h2 className='text-[35px] mb-[16px] font-bold text-center text-[#225890]'>¿Qué servicios brindamos?</h2>
       </div>
-      <div className='flex flex-wrap items-center justify-start mt-5 align-middle' >
+      <div className='grid items-center justify-center mt-5 align-middle ' style={{
+        gridTemplateColumns: 'repeat(auto-fill, minmax(10rem, 25rem))', gap: '1rem',
+        margin: '0% 10% 0% 10%'
+      }}>
         {servicios.map((servicio, index) => (
           <React.Fragment key={servicio.id}>
             {servicio.estado ? (
-              <div className={`flex relative top-0 before:transition delay-150 duration-300 ease-in-out `} key={servicio.id} style={{
-                width: '45%',
-                height: '258px',
+              <div className={` relative top-0 before:transition delay-150 duration-300 ease-in-out `} key={servicio.id} style={{
+                maxWidth: '25rem',
+                minWidth: '15rem',
+                height: '15rem',
                 left: '0px',
                 top: '0px',
                 borderRadius: '20px',
@@ -58,12 +62,12 @@ const Servicios = () => {
 
         ) : (
         <div className={`flex ${servicio.image} bg-center bg-cover relative top-0 before:transition delay-150 duration-300 ease-in-out`} key={index} style={{
-          width: '45%',
-          height: '258px',
+          maxWidth: '25rem',
+          minWidth: '15rem',
+          height: '15rem',
           left: '0px',
           top: '0px',
           borderRadius: '20px',
-          margin: '1.3%'
         }} >
           <h3 className='justify-center m-auto'
             style={{ fontWeight: 700, lineHeight: '45px', fontFamily: 'Poppins', fontSize: '30px', color: '#FFFFFF' }}>{servicio.title} </h3>

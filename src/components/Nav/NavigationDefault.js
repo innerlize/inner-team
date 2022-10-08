@@ -18,15 +18,15 @@ export default function Example() {
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
-    window.onscroll = function() {
-      console.log("Vertical: " + window.scrollY);
-      window.addEventListener(
-        "scroll",
-        () => window.innerHeight >= 960 && setChangeNav(false)
-      );
-    
+    const handleScroll = () => {
+      window.scrollY >= 1000 ? setChangeNav(true) : setChangeNav(false);
     };
+    handleScroll();
 
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
 
   }, []);
 
@@ -38,7 +38,10 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#home" className="flex items-center">
+        <a href="#home" className="flex items-center hover:text-[#06D7F9]" style={{
+          fontWeight: "500px", fontSize: '16px',
+          lineHeight: '24px', fontFamily: "Poppins"
+        }}>
           Inicio
         </a>
       </Typography>
@@ -48,7 +51,10 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Nosotros" className="flex items-center">
+        <a href="#Nosotros" className="flex items-center hover:text-[#06D7F9] " style={{
+          fontWeight: "500px", fontSize: '16px',
+          lineHeight: '24px', fontFamily: "Poppins"
+        }}>
           Nosotros
         </a>
       </Typography>
@@ -58,7 +64,10 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#servicios" className="flex items-center">
+        <a href="#servicios" className="flex items-center hover:text-[#06D7F9]" style={{
+          fontWeight: "500px", fontSize: '16px',
+          lineHeight: '24px', fontFamily: "Poppins"
+        }}>
           Servicios
         </a>
       </Typography>
@@ -68,100 +77,113 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Blog" className="flex items-center">
-        Blog
+        <a href="#Blog" className="flex items-center hover:text-[#06D7F9]" style={{
+          fontWeight: "500px", fontSize: '16px',
+          lineHeight: '24px', fontFamily: "Poppins"
+        }}>
+          Blog
         </a>
       </Typography>
     </ul>
   );
 
   return (
-    
-    <Navbar className="mx-auto max-w-screen-xl fixed top-0" style={{ zIndex: '99999', background: "#FFFFFF", color: "#225890", border:'0', minHeight:'110px'}}>
-      
-          <div className="container mx-auto flex items-center justify-between text-blue-gray-900 w-100" style={{background: '#225890', padding: '0', margin: '0', maxHeight: "35px"}}>
 
-<div className="flex items-center gap-4 ml-[11%] pb-3 pt-2" style={{color:"#FFFFFF"}}>
-        <Tooltip content="Like">
-            <Typography
+    <Navbar className="mx-auto w-[100%] fixed top-0" 
+    style={{ zIndex: '99999', 
+    background:  changeNav ? 'rgba(255, 255, 255, .15)' : "#FFFFFF",
+    backdropFilter: changeNav ? 'blur(15px)' : null,
+    color:"#225890",
+    border: '0', 
+    minHeight: '110px',
+    }}>
+
+      <div className="hidden lg:inline-block w-[100%] ">
+
+        <div className=" flex items-center justify-between text-blue-gray-900 w-100" style={{ background: '#225890', padding: '0', margin: '0', maxHeight: "35px" }}>
+
+          <div className="flex items-center gap-4 ml-[11%] pb-3 pt-2" style={{ color: "#FFFFFF" }}>
+            <Tooltip content="Like">
+              <Typography
                 as="a"
                 href="#facebook"
                 variant="lead"
                 color="blue"
                 textGradient
-            >   
+              >
                 <i className="fa-light fa-envelope mr-3 ml-2"></i>
                 info@inner-team.com
-            </Typography>
-        </Tooltip>
-        <Tooltip content="Follow" color="white" >
-            <Typography
+              </Typography>
+            </Tooltip>
+            <Tooltip content="Follow" color="white" >
+              <Typography
                 as="a"
                 href="https://api.whatsapp.com/send?phone=5491159969456&text=Hola%20Inner%20!%20Tengo%20una%20consulta%20sobre%20"
                 variant="lead"
                 color="white"
                 textGradient
-            >
+              >
                 <i className="fab fa-whatsapp mr-2" />
                 +5491159969456
-            </Typography>
-        </Tooltip>
-        </div>
-        <div className="flex items-center gap-6 mr-[12%] pb-3 pt-2" style={{color:"#FFFFFF"}}>
-        <Tooltip content="Follow">
-            <Typography
+              </Typography>
+            </Tooltip>
+          </div>
+          <div className="flex items-center gap-6 mr-[12%] pb-3 pt-2" style={{ color: "#FFFFFF" }}>
+            <Tooltip content="Follow">
+              <Typography
                 as="a"
                 href="https://www.facebook.com/inner.team.ar/"
                 variant="lead"
                 color="purple"
                 textGradient
-            >
-                <i className="fab fa-facebook" />  
-            </Typography>
-        </Tooltip>
-        <Tooltip content="Follow">
-            <Typography
+              >
+                <i className="fab fa-facebook" />
+              </Typography>
+            </Tooltip>
+            <Tooltip content="Follow">
+              <Typography
                 as="a"
                 href="https://www.instagram.com/inner.team.ar/"
                 variant="lead"
                 color="purple"
                 textGradient
-            >
-                <i className="fab fa-instagram" />  
-            </Typography>
-        </Tooltip>
-        <Tooltip content="Follow">
-            <Typography
+              >
+                <i className="fab fa-instagram" />
+              </Typography>
+            </Tooltip>
+            <Tooltip content="Follow">
+              <Typography
                 as="a"
                 href="https://www.linkedin.com/company/inner-team/"
                 variant="lead"
                 color="purple"
                 textGradient
-            >
-                <i className="fab fa-linkedin" />  
-            </Typography>
-        </Tooltip>
+              >
+                <i className="fab fa-linkedin" />
+              </Typography>
+            </Tooltip>
+          </div>
+
         </div>
+      </div>
 
-</div>
+      <div className="container flex align-middle items-center justify-between text-blue-gray-900 mt-[1%]">
 
+          <div className="flex items-center gap-2">
+          <a href="#home">
+          <img src={azul} alt="inner-team-logo" href='#home' className="align-middle items-center justify-center ml-[40%] mt-[1%]" style={{ width: '100%', height: '100%' }} />
+          </a>
+          </div>
 
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900 mt-[1%]">
-        <Typography
-          as="a"
-          href="#"
-          variant="small"
-          className="mr-4 cursor-pointer font-normal"
-        >
-          <img src={azul} alt="inner-team-logo"  href='#home' className=" ml-[40%] mt-[1%]" style={{ width: '100%', height: '100%' }} />
-        </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="sm" className="hover:bg-[#06D7F9]" style={{width:"160px", height:"45px", background: "#225890", color: "white", borderRadius: '12px', marginRight: '10%' }}>
-          <span>Contactanos</span>
+        <Button variant="gradient" size="sm" className="hidden lg:inline-block w-[15%] h-[45px] text-white mr-[10%] bg-[#225890] hover:bg-[#06D7F9]" style={{ borderRadius: '12px' }}>
+          <span>Contactenos</span>
         </Button>
+
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="ml-auto h-6 w-6 text-[#225890] hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden pr-[114px] "
+          style={{zIndex:''}}
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
@@ -197,9 +219,9 @@ export default function Example() {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <MobileNav  open={openNav} >
         {navList}
-        <Button variant="gradient" size="sm" fullWidth className="mb-2">
+        <Button variant="gradient" size="sm" className="ml-[20%] mb-[6%] w-[40%] justify-center items-center h-[15%] text-white mr-[10%] bg-[#225890] hover:bg-[#06D7F9]" style={{ borderRadius: '12px' }}>
           <span>Contactanos</span>
         </Button>
       </MobileNav>
