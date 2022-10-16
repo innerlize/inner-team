@@ -8,15 +8,28 @@ import {
   Tooltip
 } from "@material-tailwind/react";
 import azul from './azul.svg';
+import style from './style.css'
 
 export default function Example() {
   const [openNav, setOpenNav] = useState(false);
   const [changeNav, setChangeNav] = useState(false);
+  const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
+
+  window.innerWidth >= 960 ? setMobile(false) : setMobile(true);
+
+
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
+      () => {
+        if (window.innerWidth >= 960) {
+          setOpenNav(false)
+          setMobile(false)
+        } else {
+          setMobile(true)
+        }
+      },
     );
     const handleScroll = () => {
       window.scrollY >= 1000 ? setChangeNav(true) : setChangeNav(false);
@@ -31,16 +44,17 @@ export default function Example() {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-2 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#home" className="flex items-center hover:text-[#06D7F9]" style={{
+        <a href="#home" className="flex items-center hover:text-[#06D7F9] active:text-#06D7F9" style={{
           fontWeight: "500px", fontSize: '16px',
-          lineHeight: '24px', fontFamily: "Poppins"
+          lineHeight: mobile ? '10px' :'24px', fontFamily: "Poppins",
+
         }}>
           Inicio
         </a>
@@ -53,7 +67,7 @@ export default function Example() {
       >
         <a href="#Nosotros" className="flex items-center hover:text-[#06D7F9] " style={{
           fontWeight: "500px", fontSize: '16px',
-          lineHeight: '24px', fontFamily: "Poppins"
+          lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins"
         }}>
           Nosotros
         </a>
@@ -64,9 +78,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#servicios" className="flex items-center hover:text-[#06D7F9]" style={{
+        <a href="#servicios" className="flex items-center hover:text-[#06D7F9]  " style={{
           fontWeight: "500px", fontSize: '16px',
-          lineHeight: '24px', fontFamily: "Poppins"
+          lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins"
         }}>
           Servicios
         </a>
@@ -79,7 +93,7 @@ export default function Example() {
       >
         <a href="#Blog" className="flex items-center hover:text-[#06D7F9]" style={{
           fontWeight: "500px", fontSize: '16px',
-          lineHeight: '24px', fontFamily: "Poppins"
+          lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins"
         }}>
           Blog
         </a>
@@ -89,14 +103,15 @@ export default function Example() {
 
   return (
 
-    <Navbar className="mx-auto w-[100%] fixed top-0" 
-    style={{ zIndex: '99999', 
-    background:  changeNav ? 'rgba(255, 255, 255, .15)' : "#FFFFFF",
-    backdropFilter: changeNav ? 'blur(15px)' : null,
-    color:"#225890",
-    border: '0', 
-    minHeight: '110px',
-    }}>
+    <Navbar className="mx-auto w-[100%] fixed top-0"
+      style={{
+        zIndex: '99999',
+        background: changeNav ? 'rgba(255, 255, 255, .15)' : "#FFFFFF",
+        backdropFilter: changeNav ? 'blur(15px)' : null,
+        color: "#225890",
+        border: '0',
+        minHeight: !mobile ? '110px' : '10%'
+      }}>
 
       <div className="hidden lg:inline-block w-[100%] ">
 
@@ -169,11 +184,18 @@ export default function Example() {
 
       <div className="container flex align-middle items-center justify-between text-blue-gray-900 mt-[1%]">
 
-          <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
           <a href="#home">
-          <img src={azul} alt="inner-team-logo" href='#home' className="align-middle items-center justify-center ml-[40%] mt-[1%]" style={{ width: '100%', height: '100%' }} />
+            <img src={azul} alt="inner-team-logo" href='#home'
+              className="align-middle items-center justify-center"
+              style={{
+                width: mobile ? '50%' : '100%',
+                height:mobile ? '50%' : '100%',
+                marginLeft: mobile ? '10%' : '40%',
+                marginTop: mobile ? '10%' : '1%',
+              }} />
           </a>
-          </div>
+        </div>
 
         <div className="hidden lg:block">{navList}</div>
         <Button variant="gradient" size="sm" className="hidden lg:inline-block w-[15%] h-[45px] text-white mr-[10%] bg-[#225890] hover:bg-[#06D7F9]" style={{ borderRadius: '12px' }}>
@@ -182,8 +204,8 @@ export default function Example() {
 
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-[#225890] hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden pr-[114px] "
-          style={{zIndex:''}}
+          className="ml-auto h-6 w-6 text-[#225890] hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden "
+          style={{ paddingRight: mobile ? '10%' : '114px' }}
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
@@ -219,9 +241,15 @@ export default function Example() {
           )}
         </IconButton>
       </div>
-      <MobileNav  open={openNav} >
+      <MobileNav 
+        open={openNav} 
+
+      >
         {navList}
-        <Button variant="gradient" size="sm" className="ml-[20%] mb-[6%] w-[40%] justify-center items-center h-[15%] text-white mr-[10%] bg-[#225890] hover:bg-[#06D7F9]" style={{ borderRadius: '12px' }}>
+        <Button variant="gradient" size="sm" className="ml-[1%] w-[30%]  h-[15%] text-white mr-[2%] bg-[#225890] hover:bg-[#06D7F9]" style={{ 
+          borderRadius: '12px',
+          left:'35%',
+          }}>
           <span>Contactanos</span>
         </Button>
       </MobileNav>

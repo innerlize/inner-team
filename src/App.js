@@ -8,6 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/blog" element={<Landing />} />
       </Routes>
     </BrowserRouter>
   );
