@@ -8,7 +8,7 @@
 }
 
 .actived p {
-	max-height: 120px;
+	max-height: 100%;
 	color: #F2F2F2;
 	transition: all .4s ease-in-out;
 }

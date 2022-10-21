@@ -14,7 +14,7 @@ function FAQItem({ question, answer }) {
 
 			<div className='title flex justify-between items-center'>
 
-				<h6 className='text-[20px] font-medium'> { question } </h6>
+				<h6 className='text-[16px] lg:text-[20px] font-medium'> { question } </h6>
 
 				{
 					!status ?
@@ -33,7 +33,7 @@ function FAQItem({ question, answer }) {
 
 			</div>
 
-			<p className='text-[18px] text-[#225890] pb-[8px] mt-[5px] overflow-hidden font-normal'>
+			<p className='text-[12px] lg:text-[18px] text-[#225890] pb-[8px] mt-[5px] overflow-hidden font-normal'>
 				{ answer }
 			</p>
 

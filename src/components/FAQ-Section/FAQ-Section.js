@@ -4,9 +4,9 @@ import FAQItem from './FAQ-Item/FAQ-Item.js';
 function FAQSection() {
 
 	return(
-		<section className='relative w-full h-full bg-[#225890]'>
+		<section className='relative w-full h-full px-[16px] lg:px[0] bg-[#225890]'>
 
-			<svg className='absolute' width="125" height="120" viewBox="0 0 125 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg className='absolute w-[16vw] h-[15vw] lg:w-[125px] lg:h-[120px]' viewBox="0 0 125 120" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M124.793 1.14951e-05L0.117188 0L0.117178 119.357L124.793 119.357L124.793 1.14951e-05Z" fill="#225890"/>
 				<path d="M51.2854 0.0705329L51.2854 97.8873L59.9946 114.521L59.9946 0.0705338L51.2854 0.0705329Z" fill="#225890"/>
 				<path d="M42.5617 0.0709297L42.5617 81.2685L51.2856 97.8877L51.2857 0.0709305L42.5617 0.0709297Z" fill="white"/>
@@ -25,14 +25,14 @@ function FAQSection() {
 				<path d="M77.428 0.0704567L77.428 90.8149L86.1372 74.1958L86.1372 0.0704575L77.428 0.0704567Z" fill="white"/>
 			</svg>
 
-			<div className='px-[150px] py-[100px]'>
+			<div className='lg:px-[11vw] py-[100px]'>
 
-				<div className='mb-[7px]'>
+				<div className='text-center mb-[7px] lg:text-left'>
 					<h5 className='text-[#54E280] mb-[7px] font-semibold'>Preguntas Frecuentes</h5>
-					<h3 className='text-4xl font-semibold'>Resolvemos tus inquietudes</h3>
+					<h3 className='text-[24px] lg:text-4xl font-semibold'>Resolvemos tus inquietudes</h3>
 				</div>
 
-				<div className='px-[216px] py-[70px]'>
+				<div className='py-[70px] lg:px-[16vw]'>
 
 					<FAQItem
 						question='¿Cómo se realiza el pago?'
