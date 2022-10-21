@@ -5,7 +5,7 @@ function FooterSection() {
 	return(
 		<section className='lg:shadow-[0_-4px_16px_rgba(0,0,0,0.15)]'>
 
-			<div className='flex flex-col-reverse lg:flex-row justify-between items-center w-[78%] mx-auto pt-[22px] pb-[31px] border-b-[1px] border-[#CCCCCC]'>
+			<div className='flex flex-col-reverse lg:flex-row justify-between items-center gap-[26px] lg:gap-[0] px-[16px] lg:w-[78%] mx-auto lg:px-[initial] pt-[22px] pb-[31px] border-b-[1px] border-[#CCCCCC]'>
 
 				<div className='hidden lg:block w-[148px]'>
 					<img src="./Logos/inner-team.svg" />
@@ -32,19 +32,20 @@ function FooterSection() {
 					</div>
 				</div>
 
-				<div className='flex flex-col align-center'>
-					<p className='mb-[16px] text-[#225890] font-semibold'>Suscribite a nuestro Newsletter</p>
+				<div className='flex flex-col align-center text-center'>
+					<h6 className='text-[#225890] font-semibold lg:hidden'>Newsletter</h6>
+					<p className='text-[13px] lg:text-[16px] mb-[20px] lg:mb-[16px] text-[#225890] lg:font-semibold'>Suscribite a nuestro Newsletter</p>
 					<div className='flex justify-center relative'>
-						<input type="mail" placeholder='Correo electrónico' className='text-[14px] w-[100%] p-[8.5px] border-[2px] border-[#225890] rounded-[10px]' />
-						<button type='submit' className='absolute right-0 h-[100%] px-[8.5px] text-[#F2F2F2] bg-[#225890] rounded-[10px]'>
-							<img src="./Logos/arrow.svg" />
+						<input type="mail" placeholder='Correo electrónico' className='text-[12px] lg:text-[14px] w-[270px] lg:w-[100%] p-[16px] lg:p-[8.5px] border-[2px] border-[#225890] rounded-[10px]' />
+						<button type='submit' className='absolute right-0 h-[100%] p-[16px] lg:p-[8.5px] text-[#F2F2F2] bg-[#225890] rounded-[10px]'>
+							<img src="./Logos/arrow.svg" className='w-[22px] h-[22px]' />
 						</button>
 					</div>
 				</div>
 
 			</div>
 
-			<div className='text-center pt-[31px] pb-[23px] font-semibold'>
+			<div className='text-center pt-[20px] pb-[63px] lg:pt-[31px] lg:pb-[23px] font-semibold'>
 				<p className='text-[#225890]'>Copyright © {new Date().getFullYear()}. inner-team.</p>
 			</div>
 

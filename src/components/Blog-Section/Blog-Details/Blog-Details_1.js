@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function BlogDetails1() {
 	return(
 		<section className='relative w-full h-full bg-[#225890]'>
 
-			<div className='px-[220px] py-[100px]'>
+			<div className='px-[16px] lg:px-[220px] py-[100px]'>
 
 				<div className='mb-[100px]'>
 					<div className='flex items-center gap-[30px]'>
@@ -40,7 +41,7 @@ export default function BlogDetails1() {
 
 				<p className='font-light'>Fuentes y links relacionados: <a className='underline'>https://ca.gov.ar/</a> , <a className='underline'>https://web.arba.gov.ar/</a> , <a className='underline'>https://www.agip.gob.ar/</a></p>
 
-				<a className='text-[#54E280] font-light'>Entrada siguiente ></a>
+				<Link to='/blog/details2' className='text-[#54E280] font-light'>Entrada siguiente ></Link>
 			</div>
 
 		</section>

@@ -6,7 +6,7 @@ function BlogSection() {
 	return(
 		<section className='relative w-full h-full bg-[#225890]'>
 
-			<div className='px-[220px] py-[100px]'>
+			<div className='px-[16px] lg:px-[220px] py-[100px]'>
 
 				<div className='mb-[7px]'>
 					<div className='flex items-center gap-[30px]'>

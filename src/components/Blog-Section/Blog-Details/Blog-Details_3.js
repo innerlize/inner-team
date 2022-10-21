@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function BlogDetails3() {
 	return(
 		<section className='relative w-full h-full bg-[#225890]'>
 
-			<div className='px-[220px] py-[100px]'>
+			<div className='px-[16px] lg:px-[220px] py-[100px]'>
 
 				<div className='mb-[100px]'>
 					<div className='flex items-center gap-[30px]'>
@@ -21,7 +22,7 @@ export default function BlogDetails3() {
 				</div>
 
 				<div className='my-[44px]'>
-					<h5 className='text-[32px] font-semibold mb-[44px]'>Exportación de Servicios</h5>
+					<h5 className='text-[32px] font-semibold mb-[44px]'>Exportación de Servicios Profesionales desde Argentina</h5>
 					<h6 className='text-[#06D7F9] font-medium'>Lo que tenés que saber</h6>
 				</div>
 
@@ -63,7 +64,7 @@ export default function BlogDetails3() {
 
 				<p className='font-light'>Fuentes y links relacionados: <a className='underline'>https://www.afip.gob.ar/derechos-de-exportacion-de-servicios/que-es/exportacion-de-servicios.asp</a></p>
 
-				<a className='text-[#54E280] font-light'>- Entrada anterior</a> <a className='text-[#54E280] font-light'>Entrada siguiente ></a>
+				<Link to='/blog/details2' className='text-[#54E280] font-light'>- Entrada anterior</Link> <Link to='/blog/details4' className='text-[#54E280] font-light'>Entrada siguiente ></Link>
 			</div>
 
 		</section>
