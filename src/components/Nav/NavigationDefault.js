@@ -126,7 +126,7 @@ export default function Example() {
                 color="blue"
                 textGradient
               >
-             <Mail size={15} color="#FFFFFF" />
+             <Mail size={15} color="#FFFFFF" style={{display: 'inline-block', marginRight:'3px'}}/>
                 info@inner-team.com
               </Typography>
             </Tooltip>
