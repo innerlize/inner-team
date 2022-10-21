@@ -8,7 +8,7 @@ import {
   Tooltip
 } from "@material-tailwind/react";
 import azul from './azul.svg';
-import style from './style.css'
+import {Mail} from 'react-feather';
 
 export default function Example() {
   const [openNav, setOpenNav] = useState(false);
@@ -121,12 +121,12 @@ export default function Example() {
             <Tooltip content="Like">
               <Typography
                 as="a"
-                href="#facebook"
+                href="mailto:info@inner-team.com"
                 variant="lead"
                 color="blue"
                 textGradient
               >
-                <i className="fa-light fa-envelope mr-3 ml-2"></i>
+             <Mail size={15} color="#FFFFFF" />
                 info@inner-team.com
               </Typography>
             </Tooltip>
