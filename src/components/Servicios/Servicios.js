@@ -38,7 +38,7 @@ const Servicios = () => {
       </div>
 
       <div className='flex flex-wrap items-center justify-center mt-5 align-middle'>
-        <h2 className='text-[35px] mb-[16px] font-bold text-center text-[#225890]'>¿Qué servicios brindamos?</h2>
+        <h2 className='text-[43px] mb-[16px] font-bold text-center text-[#225890]'>¿Qué servicios brindamos?</h2>
       </div>
       <div className='grid items-center justify-center mt-5 align-middle ' style={{
         gridTemplateColumns: 'repeat(auto-fill, minmax(10rem, 25rem))', gap: '1rem',

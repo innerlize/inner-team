@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import recurso1 from '../Header/recurso1.webp';
 import recurso2 from './recursomobile.png';
+import recurso3 from './it.png';
+
 const About = () => {
 
   let colorText1 = '#06D7F9';
@@ -32,6 +34,15 @@ const About = () => {
       gap: '16px',
       alignItems: mobile ? 'center' : 'start'
     }} >
+      <img src={recurso3} alt="it" className='w-[238px] h-[245px]'
+        style={{
+          width: mobile ? '125px' : '238px',
+          height: mobile ? '129px' : '245px',
+          position: 'absolute',
+          top: mobile ? '105%' : '105%',
+          right: mobile ? '0%' : '10%',
+          zIndex: '-1'}}
+      />
       <div className='flex flex-col justify-center '
         style={{
           alignItems: mobile ? 'center' : 'start'
@@ -45,7 +56,7 @@ const About = () => {
           {!mobile && <img src={recurso1} alt="it" className='w-7 h-7 mr-[40px]' />}
           <h2 className=' mb-[16px] font-bold text-center text-[#225890]'
             style={{
-              fontSize: mobile ? '1.3rem' : '1.7rem',
+              fontSize: mobile ? '24px' : '43px',
             }}
 
           >Soluciones profesionales para profesionales</h2>
@@ -66,7 +77,7 @@ const About = () => {
           }}
 
         >
-          <div className='pl-[8%] pt-[2%]' >
+          <div className='pl-[6%] pt-[2%]' >
             <button className='text-3xl font-bold'
               style={{
                 fontSize: "20px",
