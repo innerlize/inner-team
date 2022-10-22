@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import circulo from './circulo.png';
 import servicies from './tableservice';
 import circulo2 from './circulo2.png';
@@ -6,6 +6,16 @@ import circulo2 from './circulo2.png';
 const Servicios = () => {
 
   const [servicios, setServicios] = useState(servicies);
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    window.innerWidth >= 960 ? setMobile(false) : setMobile(true) 
+    
+      window.addEventListener(
+          "resize",
+          () => { window.innerWidth >= 960 ? setMobile(false) : setMobile(true) },
+      );
+  }, []);
 
 
   const handleClick = (Id) => {
@@ -28,7 +38,7 @@ const Servicios = () => {
       </div>
 
       <div className='flex flex-wrap items-center justify-center mt-5 align-middle'>
-        <h2 className='text-[35px] mb-[16px] font-bold text-center text-[#225890]'>¿Qué servicios brindamos?</h2>
+        <h2 className='text-[43px] mb-[16px] font-bold text-center text-[#225890]'>¿Qué servicios brindamos?</h2>
       </div>
       <div className='grid items-center justify-center mt-5 align-middle ' style={{
         gridTemplateColumns: 'repeat(auto-fill, minmax(10rem, 25rem))', gap: '1rem',
@@ -40,7 +50,7 @@ const Servicios = () => {
               <div className={` relative top-0 before:transition delay-150 duration-300 ease-in-out `} key={servicio.id} style={{
                 maxWidth: '25rem',
                 minWidth: '15rem',
-                height: '15rem',
+                height:  mobile ? '10rem' : '15rem',
                 left: '0px',
                 top: '0px',
                 borderRadius: '20px',
@@ -53,7 +63,7 @@ const Servicios = () => {
 
               }} >
             <p className='justify-center m-auto  text-[#225890]'
-              style={{ lineHeight: '17px', fontFamily: 'Poppins', fontSize: '14px', padding:'10%' }}>{servicio.description} </p>
+              style={{ lineHeight: '17px', fontFamily: 'Poppins', fontSize: '14px', padding:'7%' }}>{servicio.description} </p>
 
             <button className='flex flex-col items-end absolute' style={{ left: '90%', top: "80%",margin:'0 14px 14px 0' }} onClick={() => handleClick(servicio.id)} >
               <img src={circulo2} alt="circulo" />
@@ -64,7 +74,7 @@ const Servicios = () => {
         <div className={`flex ${servicio.image} bg-center bg-cover relative top-0 before:transition delay-150 duration-300 ease-in-out`} key={index} style={{
           maxWidth: '25rem',
           minWidth: '15rem',
-          height: '15rem',
+          height:   mobile ? '10rem' : '15rem',
           left: '0px',
           top: '0px',
           borderRadius: '20px',
