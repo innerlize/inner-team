@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogItem from './Blog-Item/Blog-Item.js';
+import { Link } from 'react-router-dom';
 
 function BlogSection() {
 
@@ -17,7 +18,7 @@ function BlogSection() {
 							<path d="M18.1128 2.94312L35.2124 22.8394" stroke="#54E280" stroke-width="5.28194" stroke-miterlimit="10" stroke-linecap="round"/>
 						</svg>
 
-						<h3 className='text-[40px] font-semibold'>Blog</h3>
+						<h3 className='text-[40px] font-semibold'><Link to='/blog'>Blog</Link></h3>
 					</div>
 					<h5 className='text-[20px] tracking-[1px] font-medium my-[44px]'>Info de interés contable e impositiva para profesionales prestadores de servicios independientes, en relación de dependencia y monotributistas.</h5>
 				</div>

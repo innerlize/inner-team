@@ -17,7 +17,7 @@ export default function BlogDetails4() {
 							<path d="M18.1128 2.94312L35.2124 22.8394" stroke="#54E280" stroke-width="5.28194" stroke-miterlimit="10" stroke-linecap="round"/>
 						</svg>
 
-						<h3 className='text-[40px] font-semibold'>Blog</h3>
+						<h3 className='text-[40px] font-semibold'><Link to='/blog'>Blog</Link></h3>
 					</div>
 				</div>
 
@@ -53,7 +53,9 @@ export default function BlogDetails4() {
 
 				<p className='mb-[44px] font-light leading-[35px]'>Puedes <span className='font-medium text-[#06D7F9]'>consultarnos</span> sobre este tema y otro relacionados por mail info@inner-team.com o por whatsapp</p>
 
-				<Link to='/blog/details4' className='text-[#54E280] font-light'>- Entrada anterior</Link>
+				<div className='mt-[120px]'>
+					<Link to='/blog/details4' className='text-[#54E280] font-light'>- Entrada anterior</Link>
+				</div>
 			</div>
 
 		</section>

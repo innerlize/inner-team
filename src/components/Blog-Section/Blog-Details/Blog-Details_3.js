@@ -17,7 +17,7 @@ export default function BlogDetails3() {
 							<path d="M18.1128 2.94312L35.2124 22.8394" stroke="#54E280" stroke-width="5.28194" stroke-miterlimit="10" stroke-linecap="round"/>
 						</svg>
 
-						<h3 className='text-[40px] font-semibold'>Blog</h3>
+						<h3 className='text-[40px] font-semibold'><Link to='/blog'>Blog</Link></h3>
 					</div>
 				</div>
 
@@ -64,7 +64,10 @@ export default function BlogDetails3() {
 
 				<p className='font-light'>Fuentes y links relacionados: <a className='underline'>https://www.afip.gob.ar/derechos-de-exportacion-de-servicios/que-es/exportacion-de-servicios.asp</a></p>
 
-				<Link to='/blog/details2' className='text-[#54E280] font-light'>- Entrada anterior</Link> <Link to='/blog/details4' className='text-[#54E280] font-light'>Entrada siguiente ></Link>
+				<div className='flex justify-between mt-[120px]'>
+					<Link to='/blog/details2' className='text-[#54E280] font-light'>- Entrada anterior</Link>
+					<Link to='/blog/details4' className='text-[#54E280] font-light'>Entrada siguiente ></Link>
+				</div>
 			</div>
 
 		</section>
