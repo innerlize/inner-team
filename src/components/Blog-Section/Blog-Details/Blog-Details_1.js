@@ -42,7 +42,9 @@ export default function BlogDetails1() {
 				<p className='font-light'>Fuentes y links relacionados: <a className='underline'>https://ca.gov.ar/</a> , <a className='underline'>https://web.arba.gov.ar/</a> , <a className='underline'>https://www.agip.gob.ar/</a></p>
 
 				<div className='flex flex-row-reverse mt-[120px]'>
-					<Link to='/blog/details2' className='text-[#54E280] font-light'>Entrada siguiente ></Link>
+					<Link to='/blog/details2' className='flex items-center text-[#54E280] font-light'>Entrada siguiente <svg className='ml-[15px]' width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M1.33337 1.16669L7.16671 7.00002L1.33337 12.8334" stroke="#54E280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></Link>
 				</div>
 			</div>
 
