@@ -53,7 +53,7 @@ const About = () => {
           <span className='text-3xl font-bold text-[#06D7F9]' style={{ fontSize: "20px", fontWeight: "600" }}>Sobre Nosotros</span>
         </div>
         <div className='flex flex-wrap items-center justify-start mt-5 align-middle'>
-          {!mobile && <img src={recurso1} alt="it" className='w-7 h-7 mr-[40px]' />}
+        {!mobile && <img src={recurso1} alt="it" className='w-7 h-7 mr-[40px]'/>}
           <h2 className=' mb-[16px] font-bold text-center text-[#225890]'
             style={{
               fontSize: mobile ? '24px' : '43px',
@@ -85,7 +85,7 @@ const About = () => {
                 color: mision ? colorText1 : colorText2,
               }} onClick={handleButtonMision}>Misión
             </button>
-            <span className='p-2'> | </span>
+            <span className='p-2 text-[#225890]'> | </span>
             <button className='buttonVision text-3xl font-bold' style={{ fontSize: "20px", fontWeight: "600", color: !mision ? colorText1 : colorText2 }} onClick={handleButtonVision}>Visión
             </button>
           </div>

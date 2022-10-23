@@ -16,7 +16,7 @@ export default function Header() {
 
     return (
         <section id='home'>
-            <div className="select-BG bg-center bg-cover w-[100%] h-[100vh] flex items-end align-middle"
+            <div className="select-BG bg-center bg-cover w-[100%] h-[80vh] flex items-end align-middle"
                 style={{
                     justifyContent: mobile ? "center" : "start"
                 }} >
@@ -45,7 +45,7 @@ export default function Header() {
                         <div className=" flex flex-wrap w-[100%] mt-[20px] mb-[10%]">
                             <img src={recurso1} alt="recurso1" className="w-[10%] h-[3%] mr-4" />
                             <Button variant="gradient" size="lg" className=" hover:bg-[#06D7F9]" style={{ background: "white", color: "#225890", borderRadius: '12px', padding: '8px 10px 8px 10px ' }}>
-                                <span>Contactanos</span>
+                                <span className='text-[#225890]'>Contactanos</span>
                             </Button>
                         </div>
                     </div>
