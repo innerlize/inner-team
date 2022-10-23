@@ -36,10 +36,10 @@ const About = () => {
     }} >
       <img src={recurso3} alt="it" className='w-[238px] h-[245px]'
         style={{
-          width: mobile ? '125px' : '238px',
-          height: mobile ? '129px' : '245px',
+          width: mobile ? '100px' : '238px',
+          height: mobile ? '105px' : '245px',
           position: 'absolute',
-          top: mobile ? '0' : '10%',
+          top: mobile ? '1%' : '10%',
           right: mobile ? '0' : '2%',
           zIndex: '-1'}}
       />
