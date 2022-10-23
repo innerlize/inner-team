@@ -5,3 +5,7 @@
   color: #F2F2F2;
   box-sizing: border-box;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
