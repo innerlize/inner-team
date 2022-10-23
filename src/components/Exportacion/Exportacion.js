@@ -19,7 +19,7 @@ const Exportacion = () => {
 
     return (
 
-        <section className="justify-center"   >
+        <section className="justify-center" style={{marginBottom:'500px'}}   >
 
             <div className='flex flex-col items-center justify-center' style={{
                 background: '#624599',

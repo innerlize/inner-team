@@ -29,7 +29,7 @@ const About = () => {
   }
 
   return (
-    <section id='Nosotros' className="flex flex-col justify-center" style={{
+    <section id='Nosotros' className="flex flex-col justify-center relative" style={{
       padding: mobile ? '9% 5% 3% 5%' : '10% 5% 10% 15%',
       gap: '16px',
       alignItems: mobile ? 'center' : 'start'
@@ -39,8 +39,8 @@ const About = () => {
           width: mobile ? '125px' : '238px',
           height: mobile ? '129px' : '245px',
           position: 'absolute',
-          top: mobile ? '105%' : '105%',
-          right: mobile ? '0%' : '1%',
+          top: mobile ? '0' : '10%',
+          right: mobile ? '0' : '2%',
           zIndex: '-1'}}
       />
       <div className='flex flex-col justify-center '
