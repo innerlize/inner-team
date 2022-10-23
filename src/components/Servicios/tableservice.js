@@ -1,3 +1,4 @@
+import servicio1 from './servicio1.png';
 const servicies = [
     {
         id: 1,
