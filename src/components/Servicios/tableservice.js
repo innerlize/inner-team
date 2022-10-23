@@ -3,7 +3,7 @@ const servicies = [
     {
         id: 1,
         title: 'Administración',
-        image: './servicio1.png',
+        image: servicio1,
         description: 'Administración Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet lorem.',
         active: false
     },
