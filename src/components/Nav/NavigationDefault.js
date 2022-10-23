@@ -113,7 +113,8 @@ export default function Example() {
         backdropFilter: changeNav ? 'blur(15px)' : null,
         color: "#225890",
         border: '0',
-        minHeight: !mobile ? '110px' : '10%'
+        minHeight: !mobile ? '110px' : '14%',
+        height: !mobile ? '110px' : '50px',
       }}>
 
       <div className="hidden lg:inline-block w-[100%] ">
@@ -218,7 +219,7 @@ export default function Example() {
               fill="none"
               className="h-6 w-6"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="#225890"
               strokeWidth={2}
             >
               <path
@@ -232,7 +233,7 @@ export default function Example() {
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
               fill="none"
-              stroke="currentColor"
+              stroke="#225890"
               strokeWidth={2}
             >
               <path
