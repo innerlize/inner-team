@@ -8,7 +8,7 @@ import {
   Tooltip
 } from "@material-tailwind/react";
 import azul from './azul.svg';
-import {Mail} from 'react-feather';
+import {Mail, Facebook, Instagram, Linkedin, PhoneCall} from 'react-feather';
 
 export default function Example() {
   const [openNav, setOpenNav] = useState(false);
@@ -54,7 +54,7 @@ export default function Example() {
         <a href="#home" className="flex items-center hover:text-[#06D7F9] active:text-#06D7F9" style={{
           fontWeight: "500px", fontSize: '16px',
           lineHeight: mobile ? '10px' :'24px', fontFamily: "Poppins",
-
+          color: "#225890"
         }}>
           Inicio
         </a>
@@ -67,7 +67,8 @@ export default function Example() {
       >
         <a href="#Nosotros" className="flex items-center hover:text-[#06D7F9] " style={{
           fontWeight: "500px", fontSize: '16px',
-          lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins"
+          lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins",
+          color: "#225890"
         }}>
           Nosotros
         </a>
@@ -80,7 +81,8 @@ export default function Example() {
       >
         <a href="#servicios" className="flex items-center hover:text-[#06D7F9]  " style={{
           fontWeight: "500px", fontSize: '16px',
-          lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins"
+          lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins",
+          color: "#225890"
         }}>
           Servicios
         </a>
@@ -91,9 +93,10 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Blog" className="flex items-center hover:text-[#06D7F9]" style={{
+        <a href="Blog" className="flex items-center hover:text-[#06D7F9]" style={{
           fontWeight: "500px", fontSize: '16px',
-          lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins"
+          lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins",
+          color: "#225890"
         }}>
           Blog
         </a>
@@ -103,7 +106,7 @@ export default function Example() {
 
   return (
 
-    <Navbar className="mx-auto w-[100%] fixed top-0"
+    <Navbar className="mx-auto w-[100%] sticky top-0"
       style={{
         zIndex: '99999',
         background: changeNav ? 'rgba(255, 255, 255, .15)' : "#FFFFFF",
@@ -138,12 +141,12 @@ export default function Example() {
                 color="white"
                 textGradient
               >
-                <i className="fab fa-whatsapp mr-2" />
+                <PhoneCall size={15} color="#FFFFFF" style={{display: 'inline-block', marginRight:'8px'}}/>
                 +5491159969456
               </Typography>
             </Tooltip>
           </div>
-          <div className="flex items-center gap-6 mr-[12%] pb-3 pt-2" style={{ color: "#FFFFFF" }}>
+          <div className="flex items-center gap-6 mr-[20%] pb-3 pt-2" style={{ }}>
             <Tooltip content="Follow">
               <Typography
                 as="a"
@@ -152,7 +155,7 @@ export default function Example() {
                 color="purple"
                 textGradient
               >
-                <i className="fab fa-facebook" />
+                  <Facebook/>
               </Typography>
             </Tooltip>
             <Tooltip content="Follow">
@@ -163,7 +166,7 @@ export default function Example() {
                 color="purple"
                 textGradient
               >
-                <i className="fab fa-instagram" />
+                <Instagram />
               </Typography>
             </Tooltip>
             <Tooltip content="Follow">
@@ -174,7 +177,7 @@ export default function Example() {
                 color="purple"
                 textGradient
               >
-                <i className="fab fa-linkedin" />
+                <Linkedin/>
               </Typography>
             </Tooltip>
           </div>
@@ -185,7 +188,7 @@ export default function Example() {
       <div className="container flex align-middle items-center justify-between text-blue-gray-900 mt-[1%]">
 
         <div className="flex items-center gap-2">
-          <a href="#home">
+          <a href="/">
             <img src={azul} alt="inner-team-logo" href='#home'
               className="align-middle items-center justify-center"
               style={{

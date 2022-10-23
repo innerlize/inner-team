@@ -50,7 +50,7 @@ const Exportacion = () => {
 
                             <div className='items-center justify-center mt-5 align-middle'>
                                 <p className='text-[14px] mb-[16px]  text-start text-[#225890]'>
-                                    De acuerda la legislación argentina, se considera exportación de servicios a aquellos prestados desde el país, <strong> no ejecutados en relación de dependencia y que son gozados en el exterior.</strong>
+                                    De acuerda la legislación argentina, se considera exportación de servicios a aquellos prestados desde el país, <strong className='text-[#225890]'> no ejecutados en relación de dependencia y que son gozados en el exterior.</strong>
                                 </p>
                                 <p className='text-[14px] font-bold mb-[16px] text-start text-[#225890]'>
                                     Aspectos relevantes: pros y contras
@@ -64,9 +64,9 @@ const Exportacion = () => {
                                     listStylePosition: 'inside',
 
                                 }}>
-                                    <li>Diversificación de ingresos.</li>
-                                    <li>Acceso a divisas extranjeras.</li>
-                                    <li>Exención en ingresos brutos.</li>
+                                    <li className='text-[#225890]'>Diversificación de ingresos.</li>
+                                    <li className='text-[#225890]'>Acceso a divisas extranjeras.</li>
+                                    <li className='text-[#225890]'>Exención en ingresos brutos.</li>
                                 </ul>
 
                                 <p className='text-[14px] mb-[16px] text-start text-[#225890]'>
@@ -79,9 +79,9 @@ const Exportacion = () => {
 
 
                                 }}>
-                                    <li>Legislación en destino.</li>
-                                    <li>Socios comerciales.</li>
-                                    <li>Ingreso de divisas al país.</li>
+                                    <li className='text-[#225890]'>Legislación en destino.</li>
+                                    <li className='text-[#225890]'>Socios comerciales.</li>
+                                    <li className='text-[#225890]'>Ingreso de divisas al país.</li>
                                 </ul>
                             </div>
                         </div>

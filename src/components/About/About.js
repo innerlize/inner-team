@@ -68,7 +68,7 @@ const About = () => {
             }}>
 
             Desde inner-team resolvemos las tareas inherentes a la administración de la actividad económica de nuestros clientes. Nuestra experiencia nos permite brindar servicios de capacitación, coaching y consultoría estratégica, impositiva, contable y administrativa.
-            Elegimos a otros profesionales como clientes porque <strong>queremos verlos crecer y ser parte de ello.</strong></p>
+            Elegimos a otros profesionales como clientes porque <strong className='text-[#225890]'>queremos verlos crecer y ser parte de ello.</strong></p>
         </div>
 
         <div className='flex flex-wrap items-start'
