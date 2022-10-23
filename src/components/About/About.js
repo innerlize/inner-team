@@ -40,7 +40,7 @@ const About = () => {
           height: mobile ? '129px' : '245px',
           position: 'absolute',
           top: mobile ? '105%' : '105%',
-          right: mobile ? '0%' : '10%',
+          right: mobile ? '0%' : '5%',
           zIndex: '-1'}}
       />
       <div className='flex flex-col justify-center '
