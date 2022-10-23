@@ -1,4 +1,4 @@
-import servicio1 from './servicio1.png';
+
 const servicies = [
     {
         id: 1,
@@ -17,14 +17,14 @@ const servicies = [
     {
         id: 3,
         title: 'Capacitación',
-        image: './servicio3.png',
+        image: 'bg-servicio3',
         description: ' Capacitación Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet lorem.',
         active: false
     },
     {
         id: 4,
         title: 'Coaching',
-        image: './servicio4.png',
+        image:'bg-servicio4',
         description: 'Coaching Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet lorem.',
         active: false
     },
