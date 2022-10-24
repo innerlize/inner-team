@@ -9,6 +9,7 @@ import {
 } from "@material-tailwind/react";
 import azul from './azul.svg';
 import {Mail, Facebook, Instagram, Linkedin, PhoneCall} from 'react-feather';
+import './Style.css'
 
 export default function Example() {
   const [openNav, setOpenNav] = useState(false);
@@ -51,10 +52,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#home" className="flex items-center hover:text-[#06D7F9] active:text-#06D7F9" style={{
+        <a href="#home" className="flex items-center text-[#225890] hover:text-[#06D7F9]" style={{
           fontWeight: "500px", fontSize: '16px',
           lineHeight: mobile ? '10px' :'24px', fontFamily: "Poppins",
-          color: "#225890"
         }}>
           Inicio
         </a>
@@ -65,10 +65,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Nosotros" className="flex items-center hover:text-[#06D7F9] " style={{
+        <a href="#Nosotros" className="flex items-center text-[#225890] hover:text-[#06D7F9]" style={{
           fontWeight: "500px", fontSize: '16px',
           lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins",
-          color: "#225890"
         }}>
           Nosotros
         </a>
@@ -79,10 +78,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#servicios" className="flex items-center hover:text-[#06D7F9]  " style={{
+        <a href="#servicios" className="flex items-center text-[#225890] hover:text-[#06D7F9] " style={{
           fontWeight: "500px", fontSize: '16px',
           lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins",
-          color: "#225890"
         }}>
           Servicios
         </a>
@@ -93,10 +91,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="Blog" className="flex items-center hover:text-[#06D7F9]" style={{
+        <a href="Blog" className="flex items-center text-[#225890] hover:text-[#06D7F9]" style={{
           fontWeight: "500px", fontSize: '16px',
           lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins",
-          color: "#225890"
         }}>
           Blog
         </a>
@@ -111,7 +108,6 @@ export default function Example() {
         zIndex: '99999',
         background: changeNav ? 'rgba(255, 255, 255, .15)' : "#FFFFFF",
         backdropFilter: changeNav ? 'blur(15px)' : null,
-        color: "#225890",
         border: '0',
         minHeight: !mobile ? '110px' : '14%',
         height: !mobile ? '110px' : '50px',
@@ -121,7 +117,7 @@ export default function Example() {
 
         <div className=" flex items-center justify-between text-blue-gray-900 w-100" style={{ background: '#225890', padding: '0', margin: '0', maxHeight: "35px" }}>
 
-          <div className="flex items-center gap-4 ml-[11%] pb-3 pt-2" style={{ color: "#FFFFFF" }}>
+          <div className="redes flex items-center gap-4 ml-[11%] pb-3 pt-2" style={{ color: "#FFFFFF" }}>
             <Tooltip content="Like">
               <Typography
                 as="a"
@@ -147,16 +143,17 @@ export default function Example() {
               </Typography>
             </Tooltip>
           </div>
-          <div className="flex items-center gap-6 mr-[20%] pb-3 pt-2" style={{ }}>
-            <Tooltip content="Follow">
+          <div className="redes flex items-center gap-6 mr-[20%] pb-3 pt-2  " style={{ }}>
+            <Tooltip content="Follow" >
               <Typography
                 as="a"
                 href="https://www.facebook.com/inner.team.ar/"
                 variant="lead"
                 color="purple"
                 textGradient
+              
               >
-                  <Facebook/>
+                  <Facebook  />
               </Typography>
             </Tooltip>
             <Tooltip content="Follow">
@@ -202,7 +199,7 @@ export default function Example() {
         </div>
 
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="sm" className="hidden lg:inline-block w-[15%] h-[45px] text-white mr-[10%] bg-[#225890] hover:bg-[#06D7F9]" style={{ borderRadius: '12px' }}>
+        <Button variant="gradient" size="sm" className="hidden lg:inline-block w-[15%] h-[45px] text-white mr-[10%] bg-[#225890] hover:bg-[#06D7F9]" style={{ borderRadius: '12px', transition: 'all .4s ease-in-out', hover: 'background-color: #06D7F9' }}>
           <span>Contactenos</span>
         </Button>
 
@@ -253,6 +250,7 @@ export default function Example() {
         <Button variant="gradient" size="sm" className="ml-[1%] w-[30%]  h-[15%] text-white mr-[2%] bg-[#225890] hover:bg-[#06D7F9]" style={{ 
           borderRadius: '12px',
           left:'35%',
+          transition: 'all .4s ease-in-out',
           }}>
           <span>Contactanos</span>
         </Button>

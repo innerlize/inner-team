@@ -44,9 +44,11 @@ export default function Header() {
                         </Typography>
                         <div className=" flex flex-wrap w-[100%] mt-[20px] mb-[10%]">
                             <img src={recurso1} alt="recurso1" className="w-[10%] h-[3%] mr-4" />
-                            <Button variant="gradient" size="lg" className=" hover:bg-[#06D7F9]" style={{ background: "white", color: "#225890", borderRadius: '12px', padding: '8px 10px 8px 10px ' }}>
-                                <span className='text-[#225890]'>Contactanos</span>
+                            <Button variant="gradient" size="lg"  className="hidden lg:inline-block w-[30%] h-[45px] text-white mr-[10%] bg-[#FFFFFF] hover:bg-[#06D7F9]" style={{  borderRadius: '12px', padding: '8px 10px 8px 10px ',transition: 'all .5s ease-in-out', hover: 'background-color: #06D7F9'  }}>
+                                <span className='text-[#225890]' style={{transition: 'all .4s ease-in-out', hover: 'background-color: #06D7F9'  }}
+                                >Contactanos</span>
                             </Button>
+         
                         </div>
                     </div>
                 </div>
