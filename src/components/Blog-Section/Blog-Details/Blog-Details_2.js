@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 
 
 export default function BlogDetails2() {
+
+	function scrollToTop() {
+		window.scrollTo(0, 0);
+	}
+
+	
 	return(
 		<section className='relative w-full h-full bg-[#225890]'>
 
@@ -47,10 +53,10 @@ export default function BlogDetails2() {
 				<p className='overflow-hidden font-light'>Fuentes y links relacionados: <a className='underline'>https://monotributo.afip.gob.ar/Public/landing-monotributo.aspx</a></p>
 
 				<div className='flex justify-between mt-[120px]'>
-					<Link to='/blog/details1' className='flex items-center text-[#54E280] font-light'><svg className='mr-[15px]' width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<Link to='/blog/details1' onClick={() => scrollToTop()} className='flex items-center text-[#54E280] font-light'><svg className='mr-[15px]' width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path d="M6.93758 1.16669L1.10425 7.00002L6.93758 12.8334" stroke="#54E280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg> Entrada anterior</Link>
-					<Link to='/blog/details3' className='flex items-center text-[#54E280] font-light'>Entrada siguiente <svg className='ml-[15px]' width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<Link to='/blog/details3' onClick={() => scrollToTop()} className='flex items-center text-[#54E280] font-light'>Entrada siguiente <svg className='ml-[15px]' width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path d="M1.33337 1.16669L7.16671 7.00002L1.33337 12.8334" stroke="#54E280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></Link>
 				</div>

@@ -4,6 +4,11 @@ import './Blog-Item.css';
 
 function BlogItem({ topic, description, topage }) {
 
+	function scrollToTop() {
+		window.scrollTo(0, 0);
+	}
+
+
 	return(
 
 		<div className='pb-[30px] mb-[32px] border-solid border-b-[1px] border-[#F2F2F2]'>
@@ -13,7 +18,7 @@ function BlogItem({ topic, description, topage }) {
 			<p className='my-[16px] font-normal leading-[28px]'> { description } </p>
 
 			<div className='flex items-center justify-end'>
-				<Link to={`/blog/details${topage}`} className='flex items-center text-[#54E280] leading-[28px]'>
+				<Link to={`/blog/details${topage}`} onClick={() => scrollToTop()} className='flex items-center text-[#54E280] leading-[28px]'>
 					Leer más
 
 					<svg className='ml-[9px]' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
