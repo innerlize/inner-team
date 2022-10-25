@@ -3,7 +3,7 @@ import React from 'react';
 
 function ContactSection() {
 	return(
-		<section className='lg:px-[150px] lg:py-[92px]'>
+		<section className='lg:px-[150px] lg:py-[92px]' id='contacto'>
 			<div className='flex flex-col px-[16px] py-[50px] bg-[#225890] lg:flex-row lg:p-[70px] lg:rounded-[20px]'>
 				<div className='mb-[43px] lg:mb-[0] lg:w-[40%]'>
 					<h5 className='text-[22px] text-[#54E280] lg:text-[32px] lg:mb-[28px] font-semibold'>Contactanos</h5>

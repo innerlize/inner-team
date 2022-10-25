@@ -199,8 +199,8 @@ export default function Example() {
         </div>
 
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="sm" className="hidden lg:inline-block w-[15%] h-[45px] text-white mr-[10%] bg-[#225890] hover:bg-[#06D7F9]" style={{ borderRadius: '12px', transition: 'all .4s ease-in-out', hover: 'background-color: #06D7F9' }}>
-          <span>Contactenos</span>
+        <Button variant="gradient" size="sm" className="hidden lg:inline-block w-[15%] h-[45px] text-white mr-[10%] bg-[#225890] hover:bg-[#06D7F9]" style={{ borderRadius: '12px', transition: 'all .4s ease-in-out', hover: 'background-color: #06D7F9' }} onClick={() => { window.location.href = "/#contacto" }}>
+          <span  >Contactenos</span>
         </Button>
 
         <IconButton
@@ -251,7 +251,8 @@ export default function Example() {
           borderRadius: '12px',
           margin:'3%',
           transition: 'all .4s ease-in-out',
-          }}>
+          }}
+          onClick={() => { window.location.href = "/#contacto" }}>
           <span>Contactanos</span>
         </Button>
       </MobileNav>

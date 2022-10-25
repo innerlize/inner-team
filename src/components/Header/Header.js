@@ -47,7 +47,8 @@ export default function Header() {
                             <img src={recurso1} alt="recurso1" className="w-[10%] h-[3%] mr-4" />
                             <Button variant="gradient" size="lg"  className="w-[30%] h-[45px] text-white mr-[10%] bg-[#FFFFFF] hover:bg-[#06D7F9]" style={{  borderRadius: '12px', padding: '8px 10px 8px 10px ',transition: 'all .5s ease-in-out', hover: 'background-color: #06D7F9', width: mobile ? '45%' : '30%' }} >
                                 <span className='text-[#225890]' style={{transition: 'all .4s ease-in-out', hover: 'background-color: #06D7F9'  }}
-                                >Contactanos</span>
+                                onClick={() => { window.location.href = "/#contacto" }}>
+                                Contactanos</span>
                             </Button>
          
                         </div>
