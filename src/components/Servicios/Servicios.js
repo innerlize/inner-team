@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import circulo from './circulo.png';
 import servicies from './tableservice';
 import circulo2 from './circulo2.png';
-
+import './Style.css';
 
 
 const Servicios = () => {
@@ -49,7 +49,7 @@ const Servicios = () => {
         {servicios.map((servicio, index) => (
           <React.Fragment key={servicio.id}>
             {servicio.estado ? (
-              <div className={` relative top-0 before:transition delay-150 duration-300 ease-in-out `} key={servicio.id} style={{
+              <div className={`servicioEfect relative top-0 before:transition delay-150 duration-300 ease-in-out `} key={servicio.id} style={{
                 maxWidth: '25rem',
                 minWidth: '15rem',
                 height:  mobile ? '10rem' : '15rem',
@@ -60,8 +60,6 @@ const Servicios = () => {
                 boxSizing: 'border - box',
                 background: '#FFFFFF',
                 border: '2px solid #06D7F9',
-                TransitionEvent: 'all 1.5s ease',
-                
 
               }} >
             <p className='justify-center m-auto  text-[#225890]'
@@ -73,7 +71,7 @@ const Servicios = () => {
           </div>
 
         ) : (
-        <div className={`flex ${servicio.image} bg-center bg-cover relative top-0 before:transition delay-150 duration-300 ease-in-out`} key={index} style={{
+  <div className={`servicioEfect flex ${servicio.image} bg-center bg-cover relative top-0 before:transition delay-150 duration-300 ease-in-out`} key={index} style={{
           maxWidth: '25rem',
           minWidth: '15rem',
           height:   mobile ? '10rem' : '15rem',

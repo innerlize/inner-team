@@ -52,7 +52,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#home" className="flex items-center text-[#225890] hover:text-[#06D7F9]" style={{
+        <a href="/#home" className="flex items-center text-[#225890] hover:text-[#06D7F9]" style={{
           fontWeight: "500px", fontSize: '16px',
           lineHeight: mobile ? '10px' :'24px', fontFamily: "Poppins",
         }}>
@@ -65,7 +65,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Nosotros" className="flex items-center text-[#225890] hover:text-[#06D7F9]" style={{
+        <a href="/#Nosotros" className="flex items-center text-[#225890] hover:text-[#06D7F9]" style={{
           fontWeight: "500px", fontSize: '16px',
           lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins",
         }}>
@@ -78,7 +78,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#servicios" className="flex items-center text-[#225890] hover:text-[#06D7F9] " style={{
+        <a href="./#servicios" className="flex items-center text-[#225890] hover:text-[#06D7F9] " style={{
           fontWeight: "500px", fontSize: '16px',
           lineHeight: mobile ? '15px' :'24px', fontFamily: "Poppins",
         }}>
@@ -205,7 +205,7 @@ export default function Example() {
 
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-[#225890] hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden "
+          className="ml-auto h-6 w-6 text-[#225890] hover:bg-transparent focus:bg-transparent lg:hidden "
           style={{ paddingRight: mobile ? '10%' : '114px'}}
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
