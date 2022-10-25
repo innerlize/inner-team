@@ -206,7 +206,7 @@ export default function Example() {
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-[#225890] hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden "
-          style={{ paddingRight: mobile ? '10%' : '114px' }}
+          style={{ paddingRight: mobile ? '10%' : '114px'}}
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
@@ -244,12 +244,12 @@ export default function Example() {
       </div>
       <MobileNav 
         open={openNav} 
-
+        className="lg:hidden bg-[#FFFFFF] min-h-[200px] p-2"
       >
         {navList}
-        <Button variant="gradient" size="sm" className="ml-[1%] w-[30%]  h-[15%] text-white mr-[2%] bg-[#225890] hover:bg-[#06D7F9]" style={{ 
+        <Button variant="gradient" size="sm" className="ml-[1%] w-[35%]  h-[25%] text-white mr-[2%] bg-[#225890] hover:bg-[#06D7F9]" style={{ 
           borderRadius: '12px',
-          left:'35%',
+          margin:'3%',
           transition: 'all .4s ease-in-out',
           }}>
           <span>Contactanos</span>

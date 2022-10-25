@@ -12,6 +12,7 @@ const About = () => {
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
+    window.innerWidth >= 960 ? setMobile(false) : setMobile(true);
     window.addEventListener(
       "resize",
       () => { window.innerWidth >= 960 ? setMobile(false) : setMobile(true) },
