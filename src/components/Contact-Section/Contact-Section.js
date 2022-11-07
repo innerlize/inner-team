@@ -6,7 +6,7 @@ function ContactSection() {
 		<section className='lg:px-[150px] lg:py-[92px]' id='contacto'>
 			<div className='flex flex-col px-[16px] py-[50px] bg-[#225890] lg:flex-row lg:p-[70px] lg:rounded-[20px]'>
 				<div className='mb-[43px] lg:mb-[0] lg:w-[40%]'>
-					<h5 className='text-[22px] text-[#54E280] lg:text-[32px] lg:mb-[28px] font-semibold'>Contactanos</h5>
+					<h5 className='text-[22px] text-[#54E280] lg:text-[32px] lg:mb-[28px] font-semibold'>Contáctanos</h5>
 					<p className='text-[14px] lg:text-[16px] my-[16px] lg:mb-[34px]'>Envíanos tu consulta desde aquí, en <br /> breve te responderemos.</p>
 					<div className='flex mb-[8px] lg:mb-[24px]'>
 						<div className='mr-[8px]'>
@@ -46,7 +46,7 @@ function ContactSection() {
 							<textarea className='focus:outline-none text-[#225890] font-medium text-[14px] lg:text-[16px] w-[100%] h-[157px] px-[21px] py-[14px] lg:p-[15px] rounded-[10px]' type="text" placeholder='Ingresa tu consulta' />
 						</div>
 
-						<button className='w-[100%] lg:w-[initial] mt-[49px] px-[28px] py-[15px] bg-[#54E280] rounded-[10px] text-[#225890] font-semibold transition-[all] duration-[300ms] hover:bg-[#F2F2F2]' type='submit'>Enviar consulta</button>
+						<button className='w-[100%] lg:w-[initial] mt-[49px] px-[28px] py-[15px] bg-[#54E280] rounded-[10px] text-[#225890] font-semibold transition-[all] duration-[300ms] hover:bg-[#F2F2F2]' type='submit'>Quiero asesoramiento</button>
 					</form>
 				</div>
 			</div>

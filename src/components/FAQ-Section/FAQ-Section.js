@@ -36,38 +36,28 @@ function FAQSection() {
 
 					<FAQItem
 						question='¿Cómo se realiza el pago?'
-						answer= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex impedit 
-						incidunt quaerat, omnis alias adipisci aspernatur. Excepturi est, corrupti! Laborum 
-						omnis distinctio fuga, ratione soluta, qui suscipit magni ullam!'
+						answer= 'Las asesorías y los servicios mensuales se pagan por transferencia bancaria. Podes consultar si necesitas otro medio de pago.'
 					/>
 
 					<FAQItem
 						question='¿Trabajan con responsables inscriptos?'
-						answer= 'Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni 
-						omnis neque voluptas mollitia quaerat modi, atque accusantium, cupiditate dicta 
-						ducimus excepturi minus sint laborum. Nulla adipisci nihil maiores quia.'
+						answer= 'Sí, aunque no es una figura impositiva que recomendamos.'
 					/>
 
 					<FAQItem
 						question='¿Puedo darme de alta para aprender lo que tengo que hacer y después darme 
 						de baja?'
-						answer= 'Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Eligendi corrupti 
-						temporibus sint fugiat nostrum explicabo maxime fugit nesciunt ad! Rerum explicabo 
-						enim vero, quos suscipit odio dolore eligendi ullam quas!'
+						answer= 'Si buscas capacitarte podés tomar una sesión de asesoramiento y/o contratar una serie de sesiones para lograr tu objetivo.'
 					/>
 
 					<FAQItem
 						question='¿Comparten información con AFIP?'
-						answer= 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus amet 
-						perferendis atque repudiandae officiis iure, error dignissimos ut, sapiente doloribus 
-						ea incidunt labore repellat quos, accusamus. Vitae sed dolore, incidunt?'
+						answer= 'No, la información que compartís con nosotros es confidencial.'
 					/>
 
 					<FAQItem
 						question='¿Cuánto voy a tener que pagar de impuestos trabajando para el exterior?'
-						answer= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab unde, 
-						veniam, ducimus nulla voluptates rem nostrum ex officiis numquam id. Quod commodi 
-						dolore reiciendis voluptates, animi veniam, exercitationem numquam.'
+						answer= 'Depende tu actividad, tu ubicación territorial y los montos de facturación, entre otras variables que hay que analizar en tu caso en particular.'
 					/>
 
 				</div>

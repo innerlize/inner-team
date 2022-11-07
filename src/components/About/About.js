@@ -21,7 +21,7 @@ const About = () => {
 
   const handleButtonMision = () => {
     setMision(true)
-    setTextContent('Ser equipo con nuestros clientes, asistirlos en la construcción y desarrollo de sus negocios, sostener con nuestra experiencia y habilidades el proceso de crecimiento de nuestros clientes para que hagan realidad su meta de ser sus propios jefes y de esta forma convertirse en ciudadanos que pueden brindar soluciones a la comunidad y ofrecer posibilidades de empleo a otras personas.')
+    setTextContent('Trabajar juntos para lograr que más profesionales alcancen la independencia económica y el sueño de ser sus propios jefes, creando valor para la comunidad y bienestar personal.')
   }
 
   const handleButtonVision = () => {
@@ -60,16 +60,16 @@ const About = () => {
               fontSize: mobile ? '24px' : '35px',
             }}
 
-          >Soluciones profesionales para profesionales</h2>
+          >Mejor en Equipo</h2>
           <p className='text-[#225890] pt-[1%] pb-[1%] pl-[6%] '
             style={{
               fontSize: mobile ? '0.8rem' : '1rem',
               textAlign: mobile ? 'center' : 'justify',
               paddingRight: mobile ? '0' : '7%',
             }}>
-
-            Desde inner-team resolvemos las tareas inherentes a la administración de la actividad económica de nuestros clientes. Nuestra experiencia nos permite brindar servicios de capacitación, coaching y consultoría estratégica, impositiva, contable y administrativa.
-            Elegimos a otros profesionales como clientes porque <strong className='text-[#225890]'>queremos verlos crecer y ser parte de ello.</strong></p>
+              Sabemos trabajar en equipo y comprobamos que es la mejor manera de que alcances resultados extraordinarios.
+              Nos ocupados de las tareas inherentes a la administración y desarrollo de tus servicios profesionales. Te acompañamos con servicios administrativos, consultoría estratégica y coaching.
+              {/* Elegimos a otros profesionales como clientes porque <strong className='text-[#225890]'>queremos verlos crecer y ser parte de ello.</strong> */}</p>
         </div>
 
         <div className='flex flex-wrap items-start'

@@ -32,7 +32,7 @@ export default function Header() {
                         color: '#FFFFFF',
                         textAlign: mobile ? 'center' : 'left'
 
-                    }}  >Somos expertos en <br /> atencion a profesionales </Typography>
+                    }}  > Vende tus servicios profesionales <br /> desde Argentina </Typography>
 
                     <div className="text-white w-full mt-[10px] text-start">
                         <Typography variant="lead" className="mb-2"
@@ -41,14 +41,14 @@ export default function Header() {
                                 fontSize: mobile ? '12px' : '16px',
                                 textAlign: mobile ? 'center' : 'left'
                             }}>
-                            Nuestra experiencia nos permite brindar <br /> servicios de capacitación, coaching y consultoría.
+                            Sumá nuestro apoyo en servicios <br /> administrativos, consultoría estratégica y coaching.
                         </Typography>
                         <div className=" flex flex-wrap w-[100%] mt-[20px] mb-[10%]">
                             <img src={recurso1} alt="recurso1" className="w-[10%] h-[3%] mr-4" />
                             <Button variant="gradient" size="lg"  className="w-[30%] h-[45px] text-white mr-[10%] bg-[#FFFFFF] hover:bg-[#06D7F9]" style={{  borderRadius: '12px', padding: '8px 10px 8px 10px ',transition: 'all .5s ease-in-out', hover: 'background-color: #06D7F9', width: mobile ? '45%' : '30%' }} >
                                 <span className='text-[#225890]' style={{transition: 'all .4s ease-in-out', hover: 'background-color: #06D7F9'  }}
                                 onClick={() => { window.location.href = "/#contacto" }}>
-                                Contactanos</span>
+                                Contáctanos</span>
                             </Button>
          
                         </div>

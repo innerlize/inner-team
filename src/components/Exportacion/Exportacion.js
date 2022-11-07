@@ -52,9 +52,36 @@ const Exportacion = () => {
 
                             <div className='items-center justify-center mt-5 align-middle'>
                                 <p className='text-[14px] mb-[16px]  text-start text-[#225890]'>
-                                    De acuerda la legislación argentina, se considera exportación de servicios a aquellos prestados desde el país, <strong className='text-[#225890]'> no ejecutados en relación de dependencia y que son gozados en el exterior.</strong>
+                                Organiza tus operaciones con clientes en el exterior:
                                 </p>
-                                <p className='text-[14px] font-bold mb-[16px] text-start text-[#225890]'>
+
+                                <ul className='text-[14px] mb-[16px] text-start text-[#225890]' style={{
+                                    listStyleType: 'circle',
+                                    listStylePosition: 'inside',
+
+                                }}>
+                                    <li className='text-[#225890]'>Emití Factura y justifica tus ingresos.</li>
+                                    <li className='text-[#225890]'>Evita retenciones de impuestos.</li>
+                                    <li className='text-[#225890]'>Ordena tu negocio y accede a mejores condiciones financieras.</li>
+                                    <li className='text-[#225890]'>Diseña tu negocio para facturar también en el mercado local.</li>
+                                    <li className='text-[#225890]'>Conta con asesoramiento profesional en todo momento.</li>
+                                </ul>
+
+                                <p className='text-[14px] mb-[16px] text-start text-[#225890]'>
+                                    Contras o aspectos que requieren mayor seguimiento:
+                                </p>
+
+                                <ul className='text-[14px] mb-[16px] text-start text-[#225890]' style={{
+                                    listStyleType: 'circle',
+                                    listStylePosition: 'inside',
+
+
+                                }}>
+                                    <li className='text-[#225890]'>Legislación en destino.</li>
+                                    <li className='text-[#225890]'>Socios comerciales.</li>
+                                    <li className='text-[#225890]'>Ingreso de divisas al país.</li>
+                                </ul>
+                                {/* <p className='text-[14px] font-bold mb-[16px] text-start text-[#225890]'>
                                     Aspectos relevantes: pros y contras
                                 </p>
                                 <p className='text-[14px] mb-[16px] text-start text-[#225890]'>
@@ -84,7 +111,7 @@ const Exportacion = () => {
                                     <li className='text-[#225890]'>Legislación en destino.</li>
                                     <li className='text-[#225890]'>Socios comerciales.</li>
                                     <li className='text-[#225890]'>Ingreso de divisas al país.</li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>

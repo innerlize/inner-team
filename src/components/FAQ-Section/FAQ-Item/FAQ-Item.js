@@ -33,7 +33,7 @@ function FAQItem({ question, answer }) {
 
 			</div>
 
-			<p className='text-[12px] lg:text-[18px] text-[#225890] pb-[8px] mt-[5px] overflow-hidden font-normal'>
+			<p className='text-[12px] lg:text-[18px] text-[#225890] py-[12px] mt-[5px] overflow-hidden font-normal'>
 				{ answer }
 			</p>
 
