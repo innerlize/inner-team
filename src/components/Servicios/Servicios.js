@@ -63,7 +63,7 @@ const Servicios = () => {
 
               }} >
             <p className='justify-center m-auto  text-[#225890]'
-              style={{ lineHeight: '17px', fontFamily: 'Poppins', fontSize: '14px', padding:'5%' }}>{servicio.description} </p>
+              style={{ lineHeight: '25px', fontFamily: 'Poppins', fontSize: '20px', padding:'5%' }}>{servicio.description} </p>
 
             <button className='flex flex-col items-end absolute' style={{ left: '90%', top: "80%",margin:'0 14px 14px 0' }} onClick={() => handleClick(servicio.id)} >
               <img src={circulo2} alt="circulo" />
