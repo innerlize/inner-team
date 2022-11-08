@@ -31,8 +31,7 @@ const Servicios = () => {
 
 
   return (
-    <section className="flex flex-col justify-center" style={{
-      
+    <section className="flex flex-col justify-center " style={{
       gap: '4%'
     }}  >
       <div className='flex flex-row items-center justify-center' id="servicios" >
@@ -44,7 +43,7 @@ const Servicios = () => {
       </div>
       <div className='grid items-center justify-center mt-5 align-middle ' style={{
         gridTemplateColumns: 'repeat(auto-fill, minmax(10rem, 25rem))', gap: '1rem',
-        margin: '0% 10% 0% 10%'
+        margin: '0% 10% 0% 10%',
       }}>
         {servicios.map((servicio, index) => (
           <React.Fragment key={servicio.id}>
@@ -53,7 +52,7 @@ const Servicios = () => {
                 maxWidth: '25rem',
                 minWidth: '15rem',
                 height:  mobile ? '10rem' : '15rem',
-                left: '0px',
+                left: index == 2 ? 'calc(50% - 10rem)' : '0',
                 top: '0px',
                 borderRadius: '20px',
                 margin: '1.3%',
@@ -75,7 +74,7 @@ const Servicios = () => {
           maxWidth: '25rem',
           minWidth: '15rem',
           height:   mobile ? '10rem' : '15rem',
-          left: '0px',
+          left: index == 2 ? 'calc(100% - 12rem)' : '0',
           top: '0px',
           borderRadius: '20px',
         }} >
