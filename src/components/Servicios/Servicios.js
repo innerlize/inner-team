@@ -52,7 +52,7 @@ const Servicios = () => {
                 maxWidth: '25rem',
                 minWidth: '15rem',
                 height:  mobile ? '10rem' : '15rem',
-                left: index == 2 ? 'calc(100% - 12rem)' : '0',
+                left: !mobile && index == 2 ? 'calc(100% - 12rem)' : '0',
                 top: '0px',
                 borderRadius: '20px',
                 margin: '1.3%',
@@ -62,7 +62,7 @@ const Servicios = () => {
 
               }} >
             <p className='justify-center m-auto  text-[#225890]'
-              style={{ lineHeight: '25px', fontFamily: 'Poppins', fontSize: '20px', padding:'5%' }}>{servicio.description} </p>
+              style={{ lineHeight: '18px', fontFamily: 'Poppins', fontSize: '14px', padding:'5%' }}>{servicio.description} </p>
 
             <button className='flex flex-col items-end absolute' style={{ left: '90%', top: "80%",margin:'0 14px 14px 0' }} onClick={() => handleClick(servicio.id)} >
               <img src={circulo2} alt="circulo" />
@@ -74,7 +74,7 @@ const Servicios = () => {
           maxWidth: '25rem',
           minWidth: '15rem',
           height:   mobile ? '10rem' : '15rem',
-          left: index == 2 ? 'calc(100% - 12rem)' : '0',
+          left: !mobile && index == 2 ? 'calc(100% - 12rem)' : '0',
           top: '0px',
           borderRadius: '20px',
         }} >
