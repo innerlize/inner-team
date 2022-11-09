@@ -19,10 +19,10 @@ const Exportacion = () => {
 
     return (
 
-        <section className="justify-center" style={{
+        <section className="justify-center lg:px-[16vw]" style={{
             marginBottom: mobile? '25px' : '100px',
         }}>
-            <div className=' lg:px-[16vw]'>
+           
 
             <div className='flex flex-col items-center justify-center' style={{
                 background: '#624599',
@@ -37,8 +37,8 @@ const Exportacion = () => {
 
 
             <div className='grid items-center justify-center mt-5 align-middle ' style={{
-                gridTemplateColumns: 'repeat(auto-fill, minmax(15rem, 30rem))',
-                margin: '0% 10% 0% 10%'
+                gridTemplateColumns: 'repeat(auto-fill, minmax(12rem, 25rem))',
+                margin: '0% 11% 0% 10%'
             }}>
                 { mobile ? (
                            <div className='p-5 m-5'>
@@ -102,7 +102,7 @@ const Exportacion = () => {
 
             </div>
 
-            </div>
+            
         </section>
 
     )
