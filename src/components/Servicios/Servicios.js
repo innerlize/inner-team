@@ -52,7 +52,7 @@ const Servicios = () => {
                 maxWidth: '25rem',
                 minWidth: '15rem',
                 height:  mobile ? '10rem' : '15rem',
-                left: !mobile && index == 2 ? 'calc(100% - 12rem)' : '0',
+                left: '0',
                 top: '0px',
                 borderRadius: '20px',
                 margin: '1.3%',
@@ -74,7 +74,7 @@ const Servicios = () => {
           maxWidth: '25rem',
           minWidth: '15rem',
           height:   mobile ? '10rem' : '15rem',
-          left: !mobile && index == 2 ? 'calc(100% - 12rem)' : '0',
+          left:  '0',
           top: '0px',
           borderRadius: '20px',
         }} >

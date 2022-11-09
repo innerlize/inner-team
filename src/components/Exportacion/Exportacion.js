@@ -22,6 +22,7 @@ const Exportacion = () => {
         <section className="justify-center" style={{
             marginBottom: mobile? '25px' : '100px',
         }}>
+      {/*       <div className=' lg:px-[16vw]'> */}
 
             <div className='flex flex-col items-center justify-center' style={{
                 background: '#624599',
@@ -81,37 +82,6 @@ const Exportacion = () => {
                                     <li className='text-[#225890]'>Socios comerciales.</li>
                                     <li className='text-[#225890]'>Ingreso de divisas al país.</li>
                                 </ul>
-                                {/* <p className='text-[14px] font-bold mb-[16px] text-start text-[#225890]'>
-                                    Aspectos relevantes: pros y contras
-                                </p>
-                                <p className='text-[14px] mb-[16px] text-start text-[#225890]'>
-                                    Pros o beneficios:
-                                </p>
-
-                                <ul className='text-[14px] mb-[16px] text-start text-[#225890]' style={{
-                                    listStyleType: 'circle',
-                                    listStylePosition: 'inside',
-
-                                }}>
-                                    <li className='text-[#225890]'>Diversificación de ingresos.</li>
-                                    <li className='text-[#225890]'>Acceso a divisas extranjeras.</li>
-                                    <li className='text-[#225890]'>Exención en ingresos brutos.</li>
-                                </ul>
-
-                                <p className='text-[14px] mb-[16px] text-start text-[#225890]'>
-                                    Contras o aspectos que requieren mayor seguimiento:
-                                </p>
-
-                                <ul className='text-[14px] mb-[16px] text-start text-[#225890]' style={{
-                                    listStyleType: 'circle',
-                                    listStylePosition: 'inside',
-
-
-                                }}>
-                                    <li className='text-[#225890]'>Legislación en destino.</li>
-                                    <li className='text-[#225890]'>Socios comerciales.</li>
-                                    <li className='text-[#225890]'>Ingreso de divisas al país.</li>
-                                </ul> */}
                             </div>
                         </div>
                     </div>
@@ -132,7 +102,7 @@ const Exportacion = () => {
 
             </div>
 
-
+      {/*       </div> */}
         </section>
 
     )

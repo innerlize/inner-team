@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import recurso1 from '../Header/recurso1.webp';
 import recurso2 from './recursomobile.png';
-import recurso3 from './it.png';
+import recurso3 from './it.svg';
 
 const About = () => {
 
@@ -35,29 +35,32 @@ const About = () => {
       gap: '16px',
       alignItems: mobile ? 'center' : 'start'
     }} >
-      <img src={recurso3} alt="it" className='w-[238px] h-[245px]'
+    { !mobile && <img src={recurso3} alt="it" className='w-[238px] h-[245px]'
         style={{
           width: mobile ? '100px' : '238px',
           height: mobile ? '105px' : '245px',
           position: 'absolute',
           top: mobile ? '1%' : '10%',
           right: mobile ? '0' : '2%',
+          opacity: '0.1',
           zIndex: '-1'}}
-      />
+      /> 
+        }
       <div className='flex flex-col justify-center '
         style={{
           alignItems: mobile ? 'center' : 'start'
         }}>
 
-        {mobile && <img src={recurso2} alt="it" className='w-7 h-7 mb-3' />}
+        {mobile && <img src={recurso2} alt="it" className='w-7 h-7 mb-3' />} 
         <div className='flex flex-row items-center justify-center'>
           <span className='text-3xl font-bold text-[#06D7F9]' style={{ fontSize: "20px", fontWeight: "600" }}>Sobre Nosotros</span>
         </div>
         <div className='flex flex-wrap items-center justify-start mt-5 align-middle'>
-         {!mobile && <img src={recurso1} alt="it" className='w-7 h-7 p-0 mr-[40px]'/>}
+     {!mobile && <img src={recurso1} alt="it" className='w-7 h-7 p-0 mr-[40px]'/>} 
           <h2 className=' mb-[16px] font-bold text-center text-[#225890]'
             style={{
               fontSize: mobile ? '24px' : '35px',
+              width: mobile ? '100%' : 'auto',
             }}
 
           >Mejor en Equipo</h2>
