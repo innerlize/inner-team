@@ -183,7 +183,7 @@ export default function Example() {
         </div>
       </div>
 
-      <div className="container flex align-middle items-center justify-between text-blue-gray-900 mt-[1%]">
+      <div className="flex align-middle items-center justify-between text-blue-gray-900 mt-[1%]">
 
         <div className="flex items-center gap-2">
           <a href="/">
