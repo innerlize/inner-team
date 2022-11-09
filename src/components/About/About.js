@@ -35,7 +35,7 @@ const About = () => {
       gap: '16px',
       alignItems: mobile ? 'center' : 'start'
     }} >
-    { !mobile && <img src={recurso3} alt="it" className='w-[238px] h-[245px]'
+     <img src={recurso3} alt="it" className='w-[238px] h-[245px]'
         style={{
           width: mobile ? '100px' : '238px',
           height: mobile ? '105px' : '245px',
@@ -45,7 +45,7 @@ const About = () => {
           opacity: '0.1',
           zIndex: '-1'}}
       /> 
-        }
+        
       <div className='flex flex-col justify-center '
         style={{
           alignItems: mobile ? 'center' : 'start'
@@ -72,7 +72,7 @@ const About = () => {
             }}>
               Sabemos trabajar en equipo y comprobamos que es la mejor manera de que alcances resultados extraordinarios.
               Nos ocupados de las tareas inherentes a la administración y desarrollo de tus servicios profesionales. Te acompañamos con servicios administrativos, consultoría estratégica y coaching.
-              {/* Elegimos a otros profesionales como clientes porque <strong className='text-[#225890]'>queremos verlos crecer y ser parte de ello.</strong> */}</p>
+              </p>
         </div>
 
         <div className='flex flex-wrap items-start'

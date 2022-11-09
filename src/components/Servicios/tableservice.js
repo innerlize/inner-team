@@ -11,7 +11,7 @@ const servicies = [
         id: 2,
         title: 'Consultoría',
         image: 'bg-servicio2',
-        description: 'te asesoramos desde la inscripción en AFIP, Rentas y organismos de control, a desarrollo de nuevos servicios, determinación de costos y precios de venta, análisis de rentabilidad, planeamiento estratégico e identidad de marca, entre otros.',
+        description: 'Te asesoramos desde la inscripción en AFIP, Rentas y organismos de control, a desarrollo de nuevos servicios, determinación de costos y precios de venta, análisis de rentabilidad, planeamiento estratégico e identidad de marca, entre otros.',
         active: false
     },
     {
