@@ -22,7 +22,7 @@ const Exportacion = () => {
         <section className="justify-center" style={{
             marginBottom: mobile? '25px' : '100px',
         }}>
-      {/*       <div className=' lg:px-[16vw]'> */}
+            <div className=' lg:px-[16vw]'>
 
             <div className='flex flex-col items-center justify-center' style={{
                 background: '#624599',
@@ -102,7 +102,7 @@ const Exportacion = () => {
 
             </div>
 
-      {/*       </div> */}
+            </div>
         </section>
 
     )
