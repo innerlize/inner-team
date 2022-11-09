@@ -19,7 +19,7 @@ const Exportacion = () => {
 
     return (
 
-        <section className="justify-center lg:px-[16vw]" style={{
+        <section className="justify-center lg:px-[8vw]" style={{
             marginBottom: mobile? '25px' : '100px',
         }}>
            
