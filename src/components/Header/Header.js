@@ -22,7 +22,7 @@ export default function Header() {
                     justifyContent: mobile ? "center" : "start"
                 }} >
 
-                <div className="mt-[30%]" style={{ marginLeft: mobile ? "4%" : "10%" }}>
+                <div className="mt-[30%]" style={{ marginLeft: mobile ? "0" : "10%" }}>
                     <Typography variant="h2" style={{
                         fontFamily: 'Poppins',
                         fontSize: mobile ? '29px' : '45px',
