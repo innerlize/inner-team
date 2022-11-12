@@ -43,9 +43,10 @@ export default function Header() {
                             }}>
                             Sumá nuestro apoyo en servicios <br /> administrativos, consultoría estratégica y coaching.
                         </Typography>
-                        <div className=" flex flex-wrap w-[100%] mt-[20px] mb-[10%]" 
+                        <div className=" flex flex-wrap mt-[20px] mb-[10%]" 
                         style={{
-                            marginLeft: mobile ? "10%" : "0%"
+                            marginLeft: mobile ? "10%" : "0%",
+                            maxWidth: '100%'
                         }}>
                             <img src={recurso1} alt="recurso1" className="w-[10%] h-[3%] mr-4" />
                             <Button variant="gradient" size="lg"  className="w-[30%] h-[45px] text-white mr-[10%] bg-[#FFFFFF] hover:bg-[#06D7F9]" style={{  borderRadius: '12px', padding: '8px 10px 8px 10px ',transition: 'all .5s ease-in-out', hover: 'background-color: #06D7F9', width: mobile ? '45%' : '30%' }} >
