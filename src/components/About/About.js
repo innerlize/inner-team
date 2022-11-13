@@ -66,9 +66,10 @@ const About = () => {
           >Mejor en Equipo</h2>
           <p className='text-[#225890] pt-[1%] pb-[1%] pl-[6%] '
             style={{
-              fontSize: mobile ? '0.8rem' : '1rem',
-              textAlign: mobile ? 'center' : 'justify',
+              fontSize: mobile ? '0.8rem' : '16px',
+              textAlign: mobile ? 'center' : 'start',
               paddingRight: mobile ? '0' : '7%',
+              lineHeight:  '30px',
             }}>
               Sabemos trabajar en equipo y comprobamos que es la mejor manera de que alcances resultados extraordinarios.
               Nos ocupados de las tareas inherentes a la administración y desarrollo de tus servicios profesionales. Te acompañamos con servicios administrativos, consultoría estratégica y coaching.
@@ -98,8 +99,9 @@ const About = () => {
             <p className=' text-[#225890] pt-[1%] pb-[1%] pl-[6%] '
               style={{
                 fontSize: mobile ? '0.8rem' : '1rem',
-                textAlign: mobile ? 'center' : 'justify',
+                textAlign: mobile ? 'center' : 'start',
                 paddingRight: mobile ? '0' : '7%',
+                lineHeight:  '30px',
               }}>
               {textContent}
             </p>
