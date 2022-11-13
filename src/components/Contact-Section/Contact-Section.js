@@ -36,14 +36,14 @@ function ContactSection() {
 				<div className='lg:w-[60%]'>
 					<form action="">
 						<div className='flex flex-col justify-between gap-[20px] lg:flex-row'>
-							<input className='focus:outline-none text-[#225890] font-medium text-[14px] lg:text-[16px] lg:w-[50%] h-[55px] px-[21px] py-[14px] lg:p-[15px] rounded-[10px]' type="text" placeholder='Nombre' />
+							<input className='focus:outline-none text-[#225890] font-medium text-[14px] lg:text-[16px] lg:w-[50%] h-[55px] px-[21px] py-[14px] lg:p-[15px] rounded-[10px]' type="text" placeholder='Nombre' required />
 							<input className='focus:outline-none text-[#225890] font-medium text-[14px] lg:text-[16px] lg:w-[50%] h-[55px] px-[21px] py-[14px] lg:p-[15px] rounded-[10px]' type="text" placeholder='Apellidos' />
 						</div>
 						<div>
-							<input className='focus:outline-none text-[#225890] font-medium text-[14px] lg:text-[16px] w-[100%] h-[55px] px-[21px] py-[14px] mt-[21px] mb-[27px] lg:p-[15px] rounded-[10px]' type="mail" placeholder='Correo electrónico' />
+							<input className='focus:outline-none text-[#225890] font-medium text-[14px] lg:text-[16px] w-[100%] h-[55px] px-[21px] py-[14px] mt-[21px] mb-[27px] lg:p-[15px] rounded-[10px]' type="mail" placeholder='Correo electrónico' required />
 						</div>
 						<div className='h-[157px]'>
-							<textarea className='focus:outline-none text-[#225890] font-medium text-[14px] lg:text-[16px] w-[100%] h-[157px] px-[21px] py-[14px] lg:p-[15px] rounded-[10px]' type="text" placeholder='Ingresa tu consulta' />
+							<textarea className='focus:outline-none text-[#225890] font-medium text-[14px] lg:text-[16px] w-[100%] h-[157px] px-[21px] py-[14px] lg:p-[15px] rounded-[10px]' type="text" placeholder='Ingresa tu consulta' required />
 						</div>
 
 						<button className='w-[100%] lg:w-[initial] mt-[49px] px-[28px] py-[15px] bg-[#54E280] rounded-[10px] text-[#225890] font-semibold transition-[all] duration-[300ms] hover:bg-[#F2F2F2]' type='submit'>Quiero asesoramiento</button>

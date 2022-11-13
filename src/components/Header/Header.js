@@ -43,7 +43,7 @@ export default function Header() {
                             }}>
                             Sumá nuestro apoyo en servicios <br /> administrativos, consultoría estratégica y coaching.
                         </Typography>
-                        <div className=" flex flex-wrap mt-[20px] mb-[10%]"
+                        <div className=" flex flex-wrap mt-[20px] mb-[10%]" 
                         style={{
                             marginLeft: mobile ? "10%" : "0%",
                             maxWidth: '100%'
