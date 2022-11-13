@@ -25,14 +25,14 @@ export default function Header() {
                 <div className="mt-[30%]" style={{ marginLeft: mobile ? "0" : "10%" }}>
                     <Typography variant="h2" style={{
                         fontFamily: 'Poppins',
-                        fontSize: mobile ? '29px' : '45px',
+                        fontSize: mobile ? '29px' : '40px',
                         fontWeight: '600',
                         lineHeight: '50px',
                         letterSpacing: '-0.025em',
                         color: '#FFFFFF',
                         textAlign: mobile ? 'center' : 'left'
 
-                    }}  > Vende tus servicios profesionales <br /> desde Argentina </Typography>
+                    }}  > Vende tus servicios  <br /> profesionales desde Argentina </Typography>
 
                     <div className="text-white w-full mt-[10px] text-start">
                         <Typography variant="lead" className="mb-2"

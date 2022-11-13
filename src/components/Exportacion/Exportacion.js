@@ -68,21 +68,7 @@ const Exportacion = () => {
                                     <li className='text-[#225890]'>Conta con asesoramiento profesional en todo momento.</li>
                                 </ul>
 
-                                <p className='text-[14px] mb-[16px] text-start text-[#225890]'>
-                                    Contras o aspectos que requieren mayor seguimiento:
-                                </p>
-
-                                <ul className='text-[14px] mb-[16px] text-start text-[#225890]' style={{
-                                    listStyleType: 'circle',
-                                    listStylePosition: 'inside',
-
-
-                                }}>
-                                    <li className='text-[#225890]'>Legislación en destino.</li>
-                                    <li className='text-[#225890]'>Socios comerciales.</li>
-                                    <li className='text-[#225890]'>Ingreso de divisas al país.</li>
-                                </ul>
-                            </div>
+                                                           </div>
                         </div>
                     </div>
 
