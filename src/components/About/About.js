@@ -68,7 +68,7 @@ const About = () => {
             style={{
               fontSize: mobile ? '0.8rem' : '16px',
               textAlign: mobile ? 'center' : 'start',
-              paddingRight: mobile ? '0' : '7%',
+              paddingRight: mobile ? '0' : '15%',
               lineHeight:  '30px',
             }}>
               Sabemos trabajar en equipo y comprobamos que es la mejor manera de que alcances resultados extraordinarios.
@@ -100,7 +100,7 @@ const About = () => {
               style={{
                 fontSize: mobile ? '0.8rem' : '1rem',
                 textAlign: mobile ? 'center' : 'start',
-                paddingRight: mobile ? '0' : '7%',
+                paddingRight: mobile ? '0' : '15%',
                 lineHeight:  '30px',
               }}>
               {textContent}
